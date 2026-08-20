@@ -50,4 +50,4 @@ spec:
       volumes:
         - name: conf
           configMap:
-            name: web-config-v1
+            name: web-config-v2
