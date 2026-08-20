@@ -14,7 +14,7 @@ spec:
       stableService: web-stable
       steps:
         - setWeight: 25
-        - pause: {duration: 20s}
+        - pause: {}
         - analysis:
             templates:
               - templateName: http-error-rate
@@ -22,7 +22,7 @@ spec:
               - name: service-name
                 value: web-canary
         - setWeight: 50
-        - pause: {duration: 20s}
+        - pause: {}
         - setWeight: 100
   template:
     metadata:
